@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact TCO</title>
+        <link rel="stylesheet" type="text/css" href="css/contact.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="./jscript/contact.js"></script>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+<!-- <script type="text/javascript">
+   (function(){
+      emailjs.init("Xa7M9hlGxpy-u32a2");
+   })();
+</script> -->
+    </head>
+    <body>
+        <header>
+            <a href="#"><img class="logo" src="img/TCO_LOGO_1-removebg-preview.png" alt=""></a>
+            <ul class="navlist">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./workwithme.html">Work With Me</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+        </br>
+    </br>
+</br>
+</br>
+</br>
+
+        <section class="container">
+            <form method="POST" action="https://api.emailjs.com/api/v1.0/email/send-form" onsubmit="sendMail(e)" target="refresh-frame">
+                <h3>I'd like to hear from you!</h3>
+                <input name="service_id" type="text" value="service_4cd31tl" style="display:none">
+                <input name="template_id" type="text" value="template_t2dmwtg" style="display:none">
+                <input name="user_id" type="text" value="Xa7M9hlGxpy-u32a2" style="display:none">
+                <input name="name" type="text" id="name" placeholder="Your Name" required>
+                <input name="email" type="email" id="email" placeholder="Where can I email you back?" required>
+                <input name="phoneNumber" type="textbox" id="phone" placeholder="Phone Number" required>
+                <textarea name="message" id="message" rows="4" placeholder="Describe how you'd like me to help you in detail" required></textarea>
+                <button type="submit" onclick="sendMail(e)">Send</button>
+            </form>
+        </section>
+
+
+        <iframe name="refresh-frame" style="display: none;"></iframe>
+
+        <!-- <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "ajosepeter841@gmail.com",
+                    Password : "FFDC20B82E79A7EC8CA12A55CA810FD94019",
+                    To : 'paroskidollar@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "New Contact Form Enquiry",
+                    Body : "Name: " + document.getElementById("name").value
+                        + "<br> Email: " + document.getElementById("email").value
+                        + "<br> Phone no: " + document.getElementById("phone").value
+                        + "<br> Message: " + document.getElementById("message").value
+                }).then(
+                message => alert("Message Sent Successfully")
+                );
+            }
+        </script> -->
+    </body>
+</html>

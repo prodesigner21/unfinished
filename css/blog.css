@@ -1,0 +1,88 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color: #ffffff;
+    --text-color: #000;
+    --secound-color: #3a2097;
+    --main-color: #f75023;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+body{
+    /* background: rgb(209, 207, 207); */
+    background-image: url(../img/page\ under\ construction.jpeg);
+    background-position: center;
+    color: var(--text-color);
+}
+
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 30px; */
+    background-image: url("../img/soft\ bg.avif");
+    background-position: center;
+    background-size: cover;
+    /* background-color: white; */
+    /* background: transparent; */
+    padding: 0px 10px;
+    transition: .3s;
+}
+.logo{
+    width: 200px;
+    height: 120px;
+    background: transparent;
+}
+.navlist{
+    display: flex;
+    /* gap: 2px; */
+}
+.navlist li{
+    position: relative;
+}
+.navlist a{
+    font-size: var(--p-font);
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 10px 27px;
+}
+.navlist a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: var(--main-color);
+    bottom: -3px;
+    left: 0%;
+    transition: ease .40s;
+}
+.navlist a:hover::after{
+    width: 100%;
+}
+
+h1{
+    text-transform: capitalize;
+    color: var(--main-color);
+    text-align: center;
+    font-size: 24px;
+    display: none;
+}
+p{
+    text-align: center;
+    color: var(--secound-color);
+    font-size: 18px;
+    display: none;
+}
